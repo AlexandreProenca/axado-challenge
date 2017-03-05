@@ -12,6 +12,8 @@
 [![Badge](https://img.shields.io/badge/portugues--brasil-ok-green.svg)](https://img.shields.io/badge/portugues--brasil-ok-green.svg "Livechat")
 -----------
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c1291fbd137c40df86fab265e9b77c7f)](https://www.codacy.com/app/linuxloco/axado-challenge?utm_source=github.com&utm_medium=referral&utm_content=AlexandreProenca/axado-challenge&utm_campaign=badger)
+
 Nesse teste você deve fazer um programa que calcula o prazo e preço de frete
 de acordo com os detalhes definidos abaixo, é uma aplicação simples que está relacionada
 com o trabalho da Axado.
