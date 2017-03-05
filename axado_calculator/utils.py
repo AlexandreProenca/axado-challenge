@@ -9,7 +9,7 @@
 # system import
 import csv
 # project import
-import exceptions
+import axado_calculator.exceptions as exceptions
 
 
 def get_row_by_weight_range(column, column_value, start, end, value, file_name, dialect=None):
