@@ -87,7 +87,17 @@ setup(
 
 
     package_data={
-
+        'axado_calculator': ['*.tpl',
+                       '*.txt',
+                       'assets/__init__.tpl',
+                       'assets/defaults.tpl',
+                       'assets/dev.tpl',
+                       'assets/production.tpl',
+                       'assets/tests.tpl',
+                       'tests/__init__.tpl',
+                       'tests/settingstest.tpl',
+                       'tests/test_rest_api.tpl'
+                       ],
     },
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',

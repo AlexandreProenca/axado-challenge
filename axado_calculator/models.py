@@ -9,6 +9,11 @@
 import config
 import utils
 
+# system import
+import os
+
+PATH_VALOR_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_VALOR_CSV)
+PATH_VALOR_TSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_VALOR_TSV)
 
 class Calc:
     """
@@ -48,7 +53,7 @@ class Calc:
         :param kg:string
         :return price:float
         """
-        return utils.get_row_by_weight_range('nome', kg, 'inicial', 'final', self.peso, config.PATH_VALOR_CSV)['preco']
+        return utils.get_row_by_weight_range('nome', kg, 'inicial', 'final', self.peso, PATH_VALOR_CSV)['preco']
 
     def get_tsv_price_by_kg(self, kg):
         """
@@ -58,7 +63,7 @@ class Calc:
         :return price:float
         """
         return float(utils.get_row_by_weight_range('nome', kg, 'inicial', 'final', self.peso,
-                                                   config.PATH_VALOR_TSV, dialect='excel-tab')['preco'])
+                                                   PATH_VALOR_TSV, dialect='excel-tab')['preco'])
 
     def seguro(self, seguro):
         """

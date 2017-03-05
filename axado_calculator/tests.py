@@ -5,6 +5,12 @@ import unittest
 import models
 import config
 import utils
+import os
+
+PATH_ROTA_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_ROTA_CSV)
+PATH_ROTA_TSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_ROTA_TSV)
+PATH_VALOR_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_VALOR_CSV)
+PATH_VALOR_TSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_VALOR_TSV)
 
 
 class CalcTest(unittest.TestCase):
@@ -23,7 +29,7 @@ class CalcTest(unittest.TestCase):
         :return: row:dict
         """
         frete = models.Calc('florianopolis', 'brasilia', 50, 7)
-        result = frete.get_route_by_file_name(config.PATH_ROTA_CSV, 'csv')
+        result = frete.get_route_by_file_name(PATH_ROTA_CSV, 'csv')
         self.assertEqual(result, {'origem': 'florianopolis', 'fixa': '13', 'seguro': '3', 'prazo': '3', 'kg': 'flo',
                                   'destino': 'brasilia'})
 
@@ -42,7 +48,7 @@ class CalcTest(unittest.TestCase):
         :return: row:dict
         """
         frete = models.Calc('florianopolis', 'brasilia', 50, 7)
-        result = frete.get_route_by_file_name(config.PATH_ROTA_TSV, 'tsv')
+        result = frete.get_route_by_file_name(PATH_ROTA_TSV, 'tsv')
         self.assertEqual(result,
                          {'destino': 'brasilia', 'prazo': '2', 'icms': '6', 'limite': '0', 'origem': 'florianopolis',
                           'seguro': '2', 'alfandega': '0', 'kg': 'flo'})
@@ -55,7 +61,7 @@ class CalcTest(unittest.TestCase):
         :return: row:dict
         """
         self.assertEqual(utils.get_route(
-            'origem', 'destino', 'florianopolis', 'brasilia', config.PATH_ROTA_CSV, 'csv'),
+            'origem', 'destino', 'florianopolis', 'brasilia', PATH_ROTA_CSV, 'csv'),
             {'destino': 'brasilia', 'prazo': '3', 'seguro': '3', 'kg': 'flo', 'origem': 'florianopolis', 'fixa': '13'})
 
     def test_get_price_by_kg(self):
@@ -66,7 +72,7 @@ class CalcTest(unittest.TestCase):
         :return price:float
         """
         self.assertEqual(float(utils.get_row_by_weight_range('nome', 'flo', 'inicial', 'final', 7,
-                                                             config.PATH_VALOR_CSV)['preco']), 12)
+                                                             PATH_VALOR_CSV)['preco']), 12)
 
     def test_get_tsv_price_by_kg(self):
         """
@@ -76,7 +82,7 @@ class CalcTest(unittest.TestCase):
         :return price:float
         """
         self.assertEqual(float(utils.get_row_by_weight_range('nome', 'flo', 'inicial', 'final', 7,
-                                                             config.PATH_VALOR_TSV, dialect='excel-tab')['preco']),14.5)
+                                                             PATH_VALOR_TSV, dialect='excel-tab')['preco']),14.5)
 
     def test_seguro(self):
         """ Calcula valor do seguro baseado na nota fiscal.
@@ -109,7 +115,7 @@ class CalcTest(unittest.TestCase):
         :return <prazo:integer>, <total:float>
         """
         frete = models.Calc('florianopolis', 'brasilia', 50, 7)
-        rota = frete.get_route_by_file_name(config.PATH_ROTA_CSV, 'csv')
+        rota = frete.get_route_by_file_name(PATH_ROTA_CSV, 'csv')
         table_kg_faixa = frete.get_price_by_kg(rota['kg'])
         subtotal = frete.seguro(rota['seguro']) + int(rota['fixa']) + 7 * int(table_kg_faixa)
         total = frete.total(subtotal, 6)
@@ -124,7 +130,7 @@ class CalcTest(unittest.TestCase):
         :return <prazo:integer>, <total:float>
         """
         frete = models.Calc('florianopolis', 'brasilia', 50, 7)
-        rota = frete.get_route_by_file_name(config.PATH_ROTA_TSV, 'tsv')
+        rota = frete.get_route_by_file_name(PATH_ROTA_TSV, 'tsv')
         if 0 < int(rota['limite']) < frete.peso:
             return "-", "-"
 

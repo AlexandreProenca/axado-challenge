@@ -8,6 +8,7 @@
 
 # system import
 import csv
+import logging
 # project import
 import exceptions
 
