@@ -1,9 +1,12 @@
-###Axado Challenge
+#Axado Challenge
+
+[![Badge](https://travis-ci.org/AlexandreProenca/axado-challenge.svg?branch=master)](https://travis-ci.org/AlexandreProenca/axado-challenge "Travis CI")
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e0c035692b134da6a06662397f85de7f)](https://www.codacy.com/app/linuxloco/axado-challenge?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AlexandreProenca/axado-challenge&amp;utm_campaign=Badge_Grade)
+-----------
 
 Nesse teste você deve fazer um programa que calcula o prazo e preço de frete
 de acordo com os detalhes definidos abaixo, é uma aplicação simples que está relacionada
 com o trabalho da Axado.
-
 
 ###Instalação
 
