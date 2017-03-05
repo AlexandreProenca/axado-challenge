@@ -10,8 +10,8 @@
 import os
 
 # project import
-import config
-import utils
+import axado_calculator.config as config
+import axado_calculator.utils as utils
 
 PATH_VALOR_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_VALOR_CSV)
 PATH_VALOR_TSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_VALOR_TSV)
