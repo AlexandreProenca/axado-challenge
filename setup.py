@@ -48,24 +48,7 @@ version = get_version('axado_calculator')
 
 # The few arguments to easily deploy
 # Argumentos que facilitam na hora de publicar o pacote em produção
-
-if sys.argv[-1] == 'publish':
-    if os.system("pip freeze | grep wheel"):
-        print("wheel not installed.\nUse `pip install wheel`.\nExiting.")
-        sys.exit()
-    if os.system("pip freeze | grep twine"):
-        print("twine not installed.\nUse `pip install twine`.\nExiting.")
-        sys.exit()
-    os.system("python setup.py sdist bdist_wheel")
-    os.system("twine upload dist/*")
-    print("You probably want to also tag the version now:")
-    print("  git tag -a %s -m 'version %s'" % (version, version))
-    print("  git push --tags")
-    shutil.rmtree('dist')
-    shutil.rmtree('build')
-    shutil.rmtree('axado-challenge.egg-info')
-    sys.exit()
-
+# Para gerar o pacote use python setup.py sdist bdist_wheel
 
 setup(
     name='axado-challenge',
