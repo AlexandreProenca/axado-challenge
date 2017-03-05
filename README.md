@@ -13,7 +13,7 @@ com o trabalho da Axado.
 
     A forma mais segura de instalar esta biblioteca e usando os pacotes: pip e virtualenv
 
-    $ virtualenv myenv
+    $ virtualenv myenv -p python3
     $ cd myenv
     $ source bin/activate
     $ mkdir myproject
@@ -34,7 +34,8 @@ Utilização
 
 ###Estrutura dp pacote
 
-     |──- AUTHORS.rst
+     .
+    ├── AUTHORS.rst
     ├── CONTRIBUTING.md
     ├── LICENSE.rst
     ├── README.md
@@ -48,19 +49,25 @@ Utilização
     │   │   └── tabela2
     │   │       ├── preco_por_kg.tsv
     │   │       └── rotas.tsv
-    │   └── axado.py
+    │   ├── axado.py
+    │   ├── config.py
+    │   ├── exceptions.py
+    │   ├── logs
+    │   │   └── default.log
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── utils.py
     ├── dev-requirements.txt
     ├── requirements.txt
     ├── setup.cfg
     ├── setup.py
-    ├── tests
-    │   └── __init__.py
     └── tox.ini
 
 
 
+
 ###Compatibilidade e ambiente
-    Python 2.7, 3.x, pypy or pypy3
+    Python 3.5
 
 
 ##Author
