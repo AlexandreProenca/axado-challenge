@@ -60,7 +60,7 @@ setup(
     install_requires=[],
     entry_points={
         'console_scripts': [
-            'axado_calculator=axado_calculator.axado_calculator:main',
+            'axado=axado_claculator.axado_calculator:main',
         ],
     },
     zip_safe=False,
@@ -68,27 +68,18 @@ setup(
 
 
     package_data={
-        'axado_calculator': ['*.tpl',
+        'axado_calculator': ['*.py',
                        '*.txt',
-                       'assets/__init__.tpl',
-                       'assets/defaults.tpl',
-                       'assets/dev.tpl',
-                       'assets/production.tpl',
-                       'assets/tests.tpl',
-                       'tests/__init__.tpl',
-                       'tests/settingstest.tpl',
-                       'tests/test_rest_api.tpl'
+                       'assets/tabela/*.csv',
+                       'assets/tabela2/*.tsv'
                        ],
     },
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
-        'Environment :: Shell Environment',
-        'Framework :: Pure Python',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Topic :: Calculator :: Shell',
     ]
 )
