@@ -2,6 +2,14 @@
 
 [![Badge](https://travis-ci.org/AlexandreProenca/axado-challenge.svg?branch=master)](https://travis-ci.org/AlexandreProenca/axado-challenge "Travis CI")
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e0c035692b134da6a06662397f85de7f)](https://www.codacy.com/app/linuxloco/axado-challenge?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AlexandreProenca/axado-challenge&amp;utm_campaign=Badge_Grade)
+[![Badge](https://img.shields.io/pypi/v/axado-challenge.svg)](https://pypi.python.org/pypi/axado-challenge "Pypi")
+[![Badge](https://img.shields.io/pypi/dd/axado-challenge.svg)](https://pypi.python.org/pypi/axado-challenge "Pypi")
+[![Badge](https://img.shields.io/pypi/pyversions/axado-challenge.svg)](https://pypi.python.org/pypi/axado-challenge "Pypi")
+[![Badge](https://img.shields.io/pypi/l/axado-challenge.svg)](https://pypi.python.org/pypi/axado-challenge "Pypi")
+[![Badge](https://img.shields.io/pypi/wheel/axado-challenge.svg)](https://pypi.python.org/pypi/axado-challenge "Pypi")
+[![Badge](https://img.shields.io/pypi/format/axado-challenge.svg)](https://pypi.python.org/pypi/axado-challenge "Pypi")
+[![Badge](https://img.shields.io/pypi/implementation/axado-challenge.svg)](https://pypi.python.org/pypi/axado-challenge "Pypi")
+[![Badge](https://img.shields.io/pypi/status/axado-challenge.svg)](https://pypi.python.org/pypi/axado-challenge "Pypi")
 -----------
 
 Nesse teste você deve fazer um programa que calcula o prazo e preço de frete
