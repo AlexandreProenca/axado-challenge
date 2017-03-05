@@ -28,7 +28,7 @@ _/~~~~~~~~|~~\,   ---|---\___/----|  \/\-\
 """
 
 __title__ = 'Axado Challenge'
-__version__ = '1.1.9'
+__version__ = '1.2.3'
 __author__ = 'Alexandre Proença'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2017 Alexandre Proença'
