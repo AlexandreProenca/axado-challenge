@@ -7,4 +7,4 @@
 
 class RouteNotFound(Exception):
     def __init__(self, params):
-        self.message = ''.format(params)
+        self.message = "%s" % (params)

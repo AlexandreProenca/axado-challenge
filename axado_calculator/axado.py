@@ -66,14 +66,13 @@ def main(args):
 
 
 if __name__ == '__main__':
-    """
-    Condição que associa o nome do arquivo com o metodo principal, geralmente fazemos isso quando
+    """Condição que associa o nome do arquivo com o metodo principal, geralmente fazemos isso quando
     queremos executar o metodo main a partir de um comando.
     Faz uma verificação básica do tipo dos parametros de entrada antes de iniciar o programa,
     os 2 primeiros parametros dever ser strings em lowercase o
     2 últimos devem ser números inteiros e positivos.
-    Exibe um help para ajudar autilização do programa.
-    """
+    Exibe um help para ajudar autilização do programa."""
+
     if len(sys.argv) == 5:
         _string = re.compile(r'[a-z]')
         _number = re.compile(r'[0-9]')
