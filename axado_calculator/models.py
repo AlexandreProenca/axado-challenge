@@ -5,12 +5,13 @@
 #
 # imports baseados em http://docs.python-guide.org/en/latest/writing/style/#code-style
 
-# project import
-import config
-import utils
 
 # system import
 import os
+
+# project import
+import config
+import utils
 
 PATH_VALOR_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_VALOR_CSV)
 PATH_VALOR_TSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_VALOR_TSV)

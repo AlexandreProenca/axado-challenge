@@ -10,13 +10,15 @@
 # *  S  - Sigle Responsability Principle
 #
 
+import os
+
 # Caminho dos diretorios para acesso aos arquivos
-PATH_ROTA_CSV = 'assets/tabela/rotas.csv'
-PATH_VALOR_CSV = 'assets/tabela/preco_por_kg.csv'
-PATH_ROTA_TSV = 'assets/tabela2/rotas.tsv'
-PATH_VALOR_TSV = 'assets/tabela2/preco_por_kg.tsv'
+PATH_ROTA_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets/tabela/rotas.csv')
+PATH_VALOR_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets/tabela/preco_por_kg.csv')
+PATH_ROTA_TSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets/tabela2/rotas.tsv')
+PATH_VALOR_TSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets/tabela2/preco_por_kg.tsv')
 
 # Configuração para logging da aplicação
-PATH_LOGS = 'logs/default.log'
+PATH_LOGS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs/default.log')
 LOG_FORMAT = '[%(asctime)s] - %(message)s'
 DATE_LOG_FORMAT = '%m/%d/%Y %I:%M:%S %p'
