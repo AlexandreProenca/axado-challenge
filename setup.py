@@ -71,7 +71,8 @@ setup(
         'axado_calculator': ['*.py',
                        '*.txt',
                        'assets/tabela/*.csv',
-                       'assets/tabela2/*.tsv'
+                       'assets/tabela2/*.tsv',
+                       'logs/.keep'
                        ],
     },
     classifiers=[
