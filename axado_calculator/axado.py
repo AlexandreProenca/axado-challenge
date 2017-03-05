@@ -24,9 +24,9 @@ import logging
 import re
 
 # project import
-import axado_calculator.models as models
-import axado_calculator.exceptions as exceptions
-import axado_calculator.config as config
+import models
+import exceptions
+import config
 
 # Nome do arquivo de logs, definido nas configurações
 filename = os.path.join(os.path.dirname(os.path.abspath(__file__)), config.PATH_LOGS)
