@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 import os
 import re
-import sys
-import shutil
 
 from setuptools import setup
 
