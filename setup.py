@@ -60,7 +60,7 @@ setup(
     install_requires=[],
     entry_points={
         'console_scripts': [
-            'axado=axado_claculator.axado_calculator:main',
+            'axado=axado_calculator.axado_calculator:main',
         ],
     },
     zip_safe=False,
