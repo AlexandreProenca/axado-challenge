@@ -13,9 +13,9 @@
 -----------
 
 Nesse desafio você deve fazer um programa que calcule o prazo e preço de frete
-de acordo com os detalhes definidos nos [reaquisitos](https://github.com/AlexandreProenca/axado-challenge/tree/master/axado_calculator/assets) , é uma aplicação simples que está relacionada
-
+de acordo com os detalhes definidos nos [requisitos](https://github.com/AlexandreProenca/axado-challenge/tree/master/axado_calculator/assets) , é uma aplicação simples que está relacionada
 com o trabalho da Axado.
+
 
 ###Instalação
 
@@ -39,8 +39,8 @@ Utilização
 
     Exemplo de output:
     $ axado florianopolis brasilia 50 7
-    tabela:3, 104.79
-    tabela2:2, 109.05
+    tabela1: prazo em dias: 3,valor em reais: 104.79
+    tabela2: prazo em dias: 2,valor em reais: 109.05
 
 
 
@@ -52,8 +52,8 @@ Utilização
 
 ###Instalação Segura
 
-    A forma mais segura de instalar esta biblioteca e usando os pacotes: pip e virtualenv
-
+    A forma mais segura de instalar esta biblioteca e usando um ambiente virtual:
+    
     $ virtualenv myenv -p python3
     $ cd myenv
     $ source bin/activate
@@ -71,8 +71,8 @@ Utilização
 
     Exemplo de output:
     $ axado florianopolis brasilia 50 7
-    tabela:3, 104.79
-    tabela2:2, 109.05
+    tabela1: prazo em dias: 3,valor em reais: 104.79
+    tabela2: prazo em dias: 2,valor em reais: 109.05
 
 
 
@@ -108,7 +108,7 @@ Estes logs podem posteriormente serem coletados por serviços Saas de
 terceiros, como logstash, por exemplo, facilitando o rastreamento
 de bug e eventos.
 
-####Dependencias
+####Dependências
 Este projeto roda apenas na versão **3.5 do python**, porém não possui
 dependências de bibliotecas externas para ser executado, foram usados
 apenas os métodos built-in da linguagem, porém para desenvolvimento
