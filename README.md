@@ -1,4 +1,4 @@
-#Axado Challenge
+# Axado Challenge
 [![Badge](https://travis-ci.org/AlexandreProenca/axado-challenge.svg?branch=master)](https://travis-ci.org/AlexandreProenca/axado-challenge "Travis CI")
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e0c035692b134da6a06662397f85de7f)](https://www.codacy.com/app/linuxloco/axado-challenge?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AlexandreProenca/axado-challenge&amp;utm_campaign=Badge_Grade)
 [![Badge](https://img.shields.io/pypi/v/axado-challenge.svg)](https://pypi.python.org/pypi/axado-challenge "Pypi")
@@ -17,11 +17,11 @@ de acordo com os detalhes definidos nos [requisitos](https://github.com/Alexandr
 com o trabalho da Axado.
 
 
-###Instalação
+### Instalação
 
 `$pip install axado-challenge`
 
-###Instalação Segura
+### Instalação Segura
 
     A forma mais segura de instalar esta biblioteca e usando os pacotes: pip e virtualenv
 
@@ -44,13 +44,13 @@ Utilização
 
 
 
-#Desenvolvimento
+# Desenvolvimento
 
-###Instalação
+### Instalação
 
 `git clone https://github.com/AlexandreProenca/axado-challenge`
 
-###Instalação Segura
+### Instalação Segura
 
     A forma mais segura de instalar esta biblioteca e usando um ambiente virtual:
     
@@ -76,19 +76,19 @@ Utilização
 
 
 
-####Arquitetura
+#### Arquitetura
 A escolha de uma arquitetura baseada em composição e não em herança,
 visando maior coesão e baixo acoplamento, este projeto seguiu as boas
 praticas contidas em http://docs.python-guide.org/en/latest/
 
-####Patterns utilizados
+#### Patterns utilizados
 O padrão de projeto Builder faz parte de um grupo de padrões intitulado
 como criacionais.
 O objetivo dessa pattern é simplificar o processo de construção de um
 objeto complexo, normalmente especificando somente as características da
 instância.
 
-####Testes
+#### Testes
 Cobertura de 100% no fluxo principal, todos os métodos estão sendo testados
 com valores prefixados no intuito de verificar se a logica por tras do
 métodos estarão sempre funcionando, não foram cobertos de testes os
@@ -100,7 +100,7 @@ varias outras opções bacanas como controle de dependências para os
 testes, etc..
 Para rodar os testes basta digitar tox na raiz do projeto.
 
-####Logging
+#### Logging
 Como é muito importante poder ter uma rastreabilidade na execução da
 aplicação, o projeto está configurado para logar todos as exceptions
 e consultas realizadas.
@@ -108,43 +108,43 @@ Estes logs podem posteriormente serem coletados por serviços Saas de
 terceiros, como logstash, por exemplo, facilitando o rastreamento
 de bug e eventos.
 
-####Dependências
+#### Dependências
 Este projeto roda apenas na versão **3.5 do python**, porém não possui
 dependências de bibliotecas externas para ser executado, foram usados
 apenas os métodos built-in da linguagem, porém para desenvolvimento
 existem algumas dependências para organização e testes do projeto.
 
-####Deploy
+#### Deploy
 O deploy está utilizando os repositórios públicos do pypi.python.org,
 
-####Integração Contínua
+#### Integração Contínua
 O processo de integração contínua esta sendo feito através do serviço
 TravisCI, funciona executando os testes e fazendo deploy automático caso
 configurado para isso, eu normalmente utilizo as tags para publicar
 novas releases e hotfix automaticamente.
 
-####Versionamento GIT
+#### Versionamento GIT
 O projeto foi todo desenvolvido em uma branch paralela chamada 'development'
 assim é possível acompanhar a evolução do desenvolvimento através dos commits,
 as alterações entrar na master através de pull requests e os commits são
 pequenos em geral.
 
-####Segurança
+#### Segurança
 Como o projeto envolve apenas execução local e em linha de comando,
 tem maior segurança se comparado com sistemas distribuídos e on-line,
 porém nada garante que algum dia possa surgir um exploit para alguma
 versão da linguagem,ou de alguma biblioteca utilizada, vale sempre ficar
 atento aos alertas de segurança.
 
-####Performance
+#### Performance
 A performance em parte é responsável pela boa experiência que um usuário tem
 usando uma aplicação, por isso busquei otimizar o uso de loops e
 chamadas de métodos desnecessárias.
 
-###Compatibilidade e ambiente
+### Compatibilidade e ambiente
 Python 3.5
   
-####Estrutura do pacote
+#### Estrutura do pacote
 
      .
     ├── AUTHORS.rst
